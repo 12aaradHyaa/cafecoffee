@@ -1,9 +1,7 @@
 import { motion, useInView } from 'framer-motion';
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
 
 const About = () => {
-  const locationRef = useRef(null);
-  const isLocationInView = useInView(locationRef, { once: true, threshold: 0.3 });
   
   // Refs for new animations
   const heroRef = useRef(null);

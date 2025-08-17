@@ -142,15 +142,15 @@ const Home = () => {
 
             <ul className="flex flex-col gap-2 text-[#F5E6D3]">
               <li className="flex items-center gap-1">
-                <img src="/small-coffee.svg" className="h-4 w-4" alt="" />
+                <img src="/small-coffee.svg" className="h-4 w-4" alt="" />{" "}
                 People First Approach
               </li>
               <li className="flex items-center gap-1">
-                <img src="/small-coffee.svg" className="h-4 w-4" alt="" />
+                <img src="/small-coffee.svg" className="h-4 w-4" alt="" />{" "}
                 Unwavering Commitment
               </li>
               <li className="flex items-center gap-1">
-                <img src="/small-coffee.svg" className="h-4 w-4" alt="" />
+                <img src="/small-coffee.svg" className="h-4 w-4" alt="" />{" "}
                 Legacy in Every Cup
               </li>
             </ul>
