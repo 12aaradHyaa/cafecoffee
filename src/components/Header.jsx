@@ -4,17 +4,17 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className="h-24 mb-8 flex justify-center items-center w-full cursor-default">
-      <div className="bg-[#161916] gap-32 text-white flex justify-around items-center px-8 py-4 w-[95vw] cursor-default">
+      <div className="bg-[#161916] gap-16 text-white flex justify-between items-center px-8 py-4 w-[95vw] cursor-default">
         {/* Logo/Brand */}
-        <div className="flex justify-center items-center">
-          <NavLink to="/" className="text-4xl font-semibold text-center">
+        <div className="flex justify-start items-center flex-1">
+          <NavLink to="/" className="text-5xl font-bold text-center">
             De Globe Cafe
           </NavLink>
         </div>
 
         {/* Navigation Menu */}
-        <nav>
-          <ul className="flex text-md gap-6">
+        <nav className="flex-2">
+          <ul className="flex text-xl gap-8 justify-center">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -59,8 +59,8 @@ const Header = () => {
         </nav>
 
         {/* Call to Action Button */}
-        <div>
-          <button className="bg-[#ddbda1] font-semibold text-black px-20 py-2 hover:bg-orange-500 hover:text-white duration-300 transition-colors cursor-pointer">
+        <div className="flex justify-end items-center flex-1">
+          <button className="bg-[#6F4E37] font-semibold text-[#F5E6D3] px-20 py-3 text-lg hover:bg-orange-500 hover:text-white duration-300 transition-colors cursor-pointer">
             <a href="https://www.google.com/search?cs=1&output=search&kgmid=/g/11l4cck0nk&q=De+Globe+Cafe&shndl=30&shem=lcuae,uaasie&kgs=9d31530bf20705f3" className="cursor-pointer">
               Visit Us Today
             </a>

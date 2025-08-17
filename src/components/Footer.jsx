@@ -1,23 +1,27 @@
 import React from "react";
 
 const Footer = () => {
+  const navigateTo = (path) => {
+    window.location.href = path;
+  };
+
   return (
     <main>
       <div className="bg-[#F8D4B4] h-[48vh] w-full font-poppins">
         {/* This is the main container for the footer */}
         <div className="flex flex-col items-center justify-center gap-5">
-          <h1 className="text-7xl text-gray-800 font-bold text-center pt-8">
-            More Than Just a Café – It’s an <br /> Experience!
+          <h1 className="text-7xl text-[#5D4E37] font-bold text-center pt-8">
+            More Than Just a Café – It's an <br /> Experience!
           </h1>
 
-          <p className="text-2xl text-gray-900 text-center">
+          <p className="text-2xl text-[#6F4E37] text-center">
             At De Globe Café, every sip, every bite, and every moment is crafted
-            with love.❤️ <br />
-            From authentic flavors to a cozy ambiance, here’s why our customers
+            with love.🎀 <br />
+            From authentic flavors to a cozy ambiance, here's why our customers
             keep coming back!
           </p>
 
-          <button className="bg-black text-white px-21 py-2 hover:bg-gray-100 hover:text-black transition-colors duration-300">
+          <button className="bg-[#5D4E37] text-[#F5E6D3] px-21 py-2 hover:bg-orange-500 hover:text-white transition-colors duration-300">
             <a href="https://www.google.com/search?cs=1&output=search&kgmid=/g/11l4cck0nk&q=De+Globe+Cafe&shndl=30&shem=lcuae,uaasie&kgs=9d31530bf20705f3">
               Visit Us Today
             </a>
@@ -49,41 +53,43 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-orange-300 transition-colors"
+                  <button
+                    onClick={() => navigateTo("/")}
+                    className="hover:text-orange-300 transition-colors cursor-pointer bg-transparent border-none text-inherit text-left p-0"
                   >
                     Home
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-orange-300 transition-colors"
+                  <button
+                    onClick={() => navigateTo("/Menu")}
+                    className="hover:text-orange-300 transition-colors cursor-pointer bg-transparent border-none text-inherit text-left p-0"
                   >
                     Menu
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-orange-300 transition-colors"
+                  <button
+                    onClick={() => navigateTo("/About")}
+                    className="hover:text-orange-300 transition-colors cursor-pointer bg-transparent border-none text-inherit text-left p-0"
                   >
                     About Us
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-orange-300 transition-colors"
+                  <button
+                    onClick={() => navigateTo("/Contact")}
+                    className="hover:text-orange-300 transition-colors cursor-pointer bg-transparent border-none text-inherit text-left p-0"
                   >
                     Contact Us
-                  </a>
+                  </button>
                 </li>
                 <li>
                   <a
-                    href="#"
-                    className="hover:text-orange-300 transition-colors"
+                    href="https://www.instagram.com/deglobecafe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-orange-300 transition-colors cursor-pointer"
                   >
                     Reels & Highlights
                   </a>

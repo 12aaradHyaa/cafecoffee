@@ -76,11 +76,11 @@ const Home = () => {
         <div className="flex w-[88vw] ml-8 justify-center overflow-hidden absolute items-center">
           {/* left text of landing page */}
           <div className="flex flex-col justify-start -mt-9 items-start w-2/3 ">
-            <p className="text-md font-bold mb-2">De Globe Cafe</p>
-            <h1 className="font-sans -mt-1 font-bold tracking-normal text-8xl leading-24 mb-7">
+            <p className="text-md font-bold mb-2 text-[#6F4E37]">De Globe Cafe</p>
+            <h1 className="font-sans -mt-1 font-bold tracking-normal text-8xl leading-24 mb-7 text-[#5D4E37]">
               Handmade Coffee with Amazing Vibes
             </h1>
-            <p className="text-xl tracking-tight font-serif leading-6">
+            <p className="text-xl tracking-tight font-serif leading-6 text-[#A0522D]">
               Handmade coffee, brewed with passion, creates an unmatched
               experience. Rich <br /> aromas, smooth flavors, and cozy vibes
               make every sip special, turning simple <br /> moments into
@@ -89,7 +89,7 @@ const Home = () => {
             </p>
             <button
               onClick={handleExploreMenu}
-              className="bg-black px-10 py-3 hover:bg-orange-400 duration-500 font-semibold mt-6 text-white rounded-lg"
+              className="bg-[#5D4E37] px-10 py-3 hover:bg-orange-500 duration-500 font-semibold mt-6 text-[#F5E6D3] rounded-lg"
             >
               Explore Our Menu
             </button>
@@ -106,7 +106,7 @@ const Home = () => {
 
       <div>
         <div className="flex bg-[url('/about-heading-bg.png')] bg-cover bg-center justify-center items-center w-[99vw] h-[60vh] bg-[#161916]">
-          <h1 className="text-[#F8d4ba] font-bold text-5xl tracking-wide leading-16">
+          <h1 className="text-[#A0522D] font-bold text-5xl tracking-wide leading-16">
             "Coffee isn’t just a drink, it’s a hug in a mug, a <br />
             spark of inspiration, and the fuel for great ideas."
           </h1>
@@ -123,12 +123,12 @@ const Home = () => {
           </div>
 
           {/* Right content in About section */}
-          <div className="w-1/2 text-white flex-col gap-5 flex justify-start items-start">
-            <p className="font-bold">About Us</p>
-            <h2 className="font-bold text-5xl leading-16">
+          <div className="w-1/2 text-[#F5E6D3] flex-col gap-5 flex justify-start items-start">
+            <p className="font-bold text-2xl text-[#c5a880] tracking-wide uppercase">About Us</p>
+            <h2 className="font-bold text-5xl leading-16 text-[#A0522D]">
               Explore Tale of <br /> Resilience & Passion
             </h2>
-            <p className="text-lg font-serif">
+            <p className="text-lg font-serif text-[#F5E6D3]">
               De Globe Cafe was established in 2019, bringing a fresh, global
               experience to Hazratganj, Lucknow, in place of a Mughal-theme
               restaurant. Just as it started gaining momentum, the Covid-19
@@ -140,7 +140,7 @@ const Home = () => {
               among the most loved in Hazratganj.
             </p>
 
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 text-[#F5E6D3]">
               <li className="flex items-center gap-1">
                 <img src="/small-coffee.svg" className="h-4 w-4" alt="" />
                 People First Approach
@@ -157,7 +157,7 @@ const Home = () => {
 
             <button
               onClick={handleAbout}
-              className="cursor-pointer px-16 py-2 hover:bg-orange-400 duration-400 hover:text-white  bg-[#F8d4ba] text-black font-semibold rounded-lg"
+              className="cursor-pointer px-16 py-2 hover:bg-orange-500 duration-400 hover:text-white bg-[#5D4E37] text-[#F5E6D3] font-semibold rounded-lg"
             >
               Learn More
             </button>
@@ -170,10 +170,10 @@ const Home = () => {
       <div className="w-full bg-[#161916] py-20">
         <div className="flex justify-center w-[95vw] mx-auto bg-[#F8d4ba] rounded-3xl py-16">
           <div className="flex flex-col justify-center items-center w-full gap-4">
-            <h1 className="text-7xl font-bold text-[#161916]">
+            <h1 className="text-7xl font-bold text-[#5D4E37]">
               Our Most Loved Sips
             </h1>
-            <p className="text-2xl font-semibold text-[#161916]">
+            <p className="text-2xl font-semibold text-[#6F4E37]">
               Crafted with passion, enjoyed with love.
             </p>
 
@@ -186,10 +186,10 @@ const Home = () => {
                   alt="Delicious Coffee"
                   className="w-full h-[320px] object-cover rounded-2xl mb-6 border border-[#c5a880]"
                 />
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-2xl font-bold text-[#A0522D]">
                   Delicious Coffee
                 </h3>
-                <p className="text-gray-100 mt-3 text-lg">
+                <p className="text-[#A0522D] mt-3 text-lg">
                   Freshly Brewed Coffee With A Deep, Rich Flavor To Kickstart
                   Your Day.
                 </p>
@@ -201,10 +201,10 @@ const Home = () => {
                   alt="Astonishing Tea"
                   className="w-full h-[320px] object-cover rounded-2xl mb-6 border border-[#c5a880]"
                 />
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-2xl font-bold text-[#A0522D]">
                   Astonishing Tea
                 </h3>
-                <p className="text-gray-100 mt-3 text-lg">
+                <p className="text-[#A0522D] mt-3 text-lg">
                   A Comforting Blend Of Tea Leaves, Milk, And Aromatic Spices.
                 </p>
               </div>
@@ -216,8 +216,8 @@ const Home = () => {
                   alt="Kulhad Tea"
                   className="w-full h-[320px] object-cover rounded-2xl mb-6 border border-[#c5a880]"
                 />
-                <h3 className="text-2xl font-bold text-white">Kulhad Tea</h3>
-                <p className="text-gray-100 mt-3 text-lg">
+                <h3 className="text-2xl font-bold text-[#A0522D]">Kulhad Tea</h3>
+                <p className="text-[#A0522D] mt-3 text-lg">
                   Traditional Indian Tea Served In An Mud Cup, Enhancing Its
                   Rich Taste.
                 </p>
@@ -231,10 +231,10 @@ const Home = () => {
       <section className="bg-[#161916] py-20 relative -mt-14 overflow-hidden w-full">
         {/* Section Heading */}
         <div className="text-center mb-1">
-          <h2 className="text-6xl font-bold text-white mb-4">
+          <h2 className="text-6xl font-bold text-[#A0522D] mb-4">
             Menu Highlights
           </h2>
-          <p className="text-white text-3xl font-semibold">
+          <p className="text-[#F5E6D3] text-3xl font-semibold">
             A Taste Of Our Most Loved Dishes And Beverages.
           </p>
         </div>
@@ -299,14 +299,14 @@ const Home = () => {
                     {/* Card Content */}
                     <div className="flex flex-col flex-grow px-1 pb-2">
                       <h3
-                        className={`font-bold text-black mt-2 mb-2 leading-tight ${
+                        className={`font-bold text-[#5D4E37] mt-2 mb-2 leading-tight ${
                           isCenter ? "text-3xl" : "text-xl"
                         }`}
                       >
                         {dish.name}
                       </h3>
                       <p
-                        className={`text-black mt-4 leading-tight ${
+                        className={`text-[#6F4E37] mt-4 leading-tight ${
                           isCenter ? "text-lg px-1" : "text-sm"
                         }`}
                       >
@@ -322,7 +322,7 @@ const Home = () => {
           {/* Left Navigation Button */}
           <button
             onClick={handlePrev}
-            className="absolute left-52 top-1/2 -translate-y-1/2 bg-[#ff6b35] hover:bg-[#e55a2e] text-white w-14 h-14 rounded-full flex items-center justify-center z-10 transition-all duration-200 shadow-lg"
+            className="absolute left-52 top-1/2 -translate-y-1/2 bg-[#A0522D] hover:bg-orange-500 text-[#F5E6D3] hover:text-white w-14 h-14 rounded-full flex items-center justify-center z-10 transition-all duration-200 shadow-lg"
           >
             <ChevronLeft size={24} strokeWidth={2.5} />
           </button>
@@ -330,7 +330,7 @@ const Home = () => {
           {/* Right Navigation Button */}
           <button
             onClick={handleNext}
-            className="absolute right-52 top-1/2 -translate-y-1/2 bg-[#ff6b35] hover:bg-[#e55a2e] text-white w-14 h-14 rounded-full flex items-center justify-center z-10 transition-all duration-200 shadow-lg"
+            className="absolute right-52 top-1/2 -translate-y-1/2 bg-[#A0522D] hover:bg-orange-500 text-[#F5E6D3] hover:text-white w-14 h-14 rounded-full flex items-center justify-center z-10 transition-all duration-200 shadow-lg"
           >
             <ChevronRight size={24} strokeWidth={2.5} />
           </button>
@@ -338,22 +338,22 @@ const Home = () => {
       </section>
 
       {/* Experience De Globe Café in Action! Section */}
-      <section className="h-[90vh] mt-28 bg-[#161916] w-full">
-        <div className="w-[95vw] mx-auto flex flex-col items-center h-full">
-          <div className="flex flex-col justify-center gap-12 items-center text-white h-full">
-            <h1 className="font-bold text-7xl">
+      <section className="bg-[#161916] w-full py-20 mt-16">
+        <div className="w-[95vw] mx-auto flex flex-col items-center">
+          <div className="flex flex-col justify-center gap-8 items-center text-[#F5E6D3] mb-16">
+            <h1 className="font-bold text-7xl text-center text-[#A0522D]">
               Experience De Globe Café in Action!
             </h1>
-            <p className="text-3xl font-semibold text-center">
+            <p className="text-3xl font-semibold text-center text-[#F5E6D3]">
               A taste of our most loved dishes and beverages.
             </p>
-            <p className="text-3xl font-semibold text-center">
+            <p className="text-3xl font-semibold text-center text-[#F5E6D3]">
               Get a taste of the De Globe Café experience through our trending
               reels! Swipe <br /> through and let the cravings begin!
             </p>
           </div>
 
-          <div className="grid grid-cols-5 gap-6 mt-12 mb-60 w-full max-w-7xl">
+          <div className="grid grid-cols-5 gap-6 w-full max-w-7xl">
             {/* Instagram Reel 1 - Cold Coffee */}
             <div className="aspect-[9/16] bg-gray-800 rounded-xl hover:scale-130 transition-transform duration-400 overflow-hidden group cursor-pointer relative">
               <video
@@ -435,100 +435,223 @@ const Home = () => {
       {/* Experience New Standards in Cafe Section */}
       <section className="h-full bg-[#161916] w-full">
         <div className="w-[95vw] mx-auto flex flex-col items-center h-full">
-          <div className="flex flex-col justify-center gap-12 items-center text-white h-full">
-            <h1 className="font-bold text-7xl text-center">
+          <div className="flex flex-col justify-center gap-12 items-center text-[#F5E6D3] h-full">
+            <h1 className="font-bold text-7xl text-center text-[#A0522D]">
               Experience the New Standard in <br />
               Café Culture
             </h1>
-            <p className="text-3xl font-semibold text-center">
+            <p className="text-3xl font-semibold text-center text-[#F5E6D3]">
               Crafted to deliver unforgettable experiences through inspired
               flavors, warm ambiance, <br /> and exceptional service.
             </p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center py-20">
-          <div className="w-[95vw] grid grid-cols-4 justify-items-center">
-            {/* img 1 */}
-            <img
-              src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0002-e1746640327834-1024x891.jpg"
-              className="hexagon overflow-hidden object-cover h-90 w-90"
-              alt=""
-            />
-
-            {/* img 2 */}
-            <img
-              src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0000-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
-
-            {/* img 3 */}
-            <img
-              src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0022-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
-
-            {/* img 4 */}
-            <img
-              src="	https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0019-768x1024.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
+        {/* Enhanced Coffee Cup Shaped Gallery */}
+        <div className="w-[90vw] mx-auto py-16 flex flex-col items-center">
+          {/* Coffee Steam - Keep the Animation */}
+          <div className="mb-6 flex justify-center space-x-3">
+            <div className="w-1 h-16 bg-gradient-to-t from-[#c5a880] via-white to-transparent rounded-full opacity-80 animate-bounce" style={{animationDelay: '0s', animationDuration: '2s'}}></div>
+            <div className="w-1 h-20 bg-gradient-to-t from-[#c5a880] via-white to-transparent rounded-full opacity-90 animate-bounce" style={{animationDelay: '0.3s', animationDuration: '2s'}}></div>
+            <div className="w-1 h-18 bg-gradient-to-t from-[#c5a880] via-white to-transparent rounded-full opacity-80 animate-bounce" style={{animationDelay: '0.6s', animationDuration: '2s'}}></div>
           </div>
 
-          <div className="w-[72vw] mx-auto grid grid-cols-3 justify-items-center -mb-16 -mt-16">
-            {/* img 1 */}
-            <img
-              src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0016-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
+          {/* Coffee Cup Shape - Better Defined */}
+          <div className="relative">
+            {/* Subtle Cup Background for Shape Definition */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#2d1810]/10 via-[#4a2c17]/10 to-[#6b3e1f]/10 rounded-t-[100px] rounded-b-[20px] transform scale-110 -z-10 shadow-2xl" style={{
+              width: '420px',
+              height: '480px',
+              clipPath: 'polygon(20% 0%, 80% 0%, 90% 15%, 90% 85%, 80% 100%, 20% 100%, 10% 85%, 10% 15%)'
+            }}></div>
 
-            {/* img 2 */}
-            <img
-              src="	https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0015-768x1024.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
+            {/* Cup Rim - Top row with coffee surface */}
+            <div className="flex justify-center mb-3 relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#8B4513]/20 via-[#A0522D]/20 to-[#8B4513]/20 rounded-full w-80 h-16 -z-5"></div>
+              <div className="flex space-x-2">
+                <div className="w-16 h-16 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0002-e1746640327834-1024x891.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="De Globe Cafe Interior"
+                  />
+                </div>
+                <div className="w-16 h-16 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0000-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Cafe Atmosphere"
+                  />
+                </div>
+                <div className="w-16 h-16 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0019-768x1024.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Coffee Culture"
+                  />
+                </div>
+                <div className="w-16 h-16 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0022-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Delicious Food"
+                  />
+                </div>
+                <div className="w-16 h-16 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0016-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Cafe Experience"
+                  />
+                </div>
+              </div>
+            </div>
 
-            {/* img 3 */}
-            <img
-              src="	https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0014-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
+            {/* Cup Upper Body - Second row */}
+            <div className="flex justify-center mb-3">
+              <div className="flex space-x-3">
+                <div className="w-18 h-18 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0015-768x1024.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Quality Service"
+                  />
+                </div>
+                <div className="w-20 h-20 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0014-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Fresh Ingredients"
+                  />
+                </div>
+                <div className="w-22 h-22 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0013-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Cozy Ambiance"
+                  />
+                </div>
+                <div className="w-20 h-20 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0012-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Premium Coffee"
+                  />
+                </div>
+                <div className="w-18 h-18 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0004-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Artisanal Beverages"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Cup Mid Body - Third row (Widest) */}
+            <div className="flex justify-center mb-3">
+              <div className="flex space-x-3">
+                <div className="w-20 h-20 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0009-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Perfect Blend"
+                  />
+                </div>
+                <div className="w-24 h-24 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0002-e1746640327834-1024x891.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Main Feature"
+                  />
+                </div>
+                <div className="w-24 h-24 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0000-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Coffee Excellence"
+                  />
+                </div>
+                <div className="w-20 h-20 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0019-768x1024.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Coffee Culture"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Cup Lower Body - Fourth row */}
+            <div className="flex justify-center mb-3">
+              <div className="flex space-x-3">
+                <div className="w-18 h-18 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0022-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Fresh Preparation"
+                  />
+                </div>
+                <div className="w-20 h-20 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0016-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Quality Experience"
+                  />
+                </div>
+                <div className="w-20 h-20 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0015-768x1024.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Service Excellence"
+                  />
+                </div>
+                <div className="w-18 h-18 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0014-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Artisan Craft"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Cup Base - Bottom row (Narrowest) */}
+            <div className="flex justify-center">
+              <div className="flex space-x-2">
+                <div className="w-14 h-14 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0013-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Cozy Atmosphere"
+                  />
+                </div>
+                <div className="w-16 h-16 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0012-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Premium Quality"
+                  />
+                </div>
+                <div className="w-14 h-14 group cursor-pointer relative z-10">
+                  <img
+                    src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0004-1024x768.jpg"
+                    className="w-full h-full object-cover rounded-full shadow-xl border-2 border-[#c5a880]/60 transition-all duration-400 group-hover:scale-[2] group-hover:z-50 group-hover:shadow-2xl"
+                    alt="Perfect Brew"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Coffee Cup Handle - Proper Handle Shape */}
+            <div className="absolute right-0 top-1/4 transform translate-x-8">
+              <div className="w-16 h-32 border-4 border-[#c5a880] bg-transparent rounded-r-full shadow-lg"></div>
+            </div>
           </div>
 
-          <div className="w-[95vw] mx-auto grid grid-cols-4 justify-items-center">
-            {/* img 1 */}
-            <img
-              src="	https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0013-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
-
-            {/* img 2 */}
-            <img
-              src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0012-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
-
-            {/* img 3 */}
-            <img
-              src="	https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0004-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
-
-            {/* img 4 */}
-            <img
-              src="https://deglobecafe.in/wp-content/uploads/2025/05/IMG-20250504-WA0009-1024x768.jpg"
-              className="hexagon object-cover overflow-hidden h-90 w-90"
-              alt=""
-            />
+          {/* Coffee Saucer - Enhanced */}
+          <div className="mt-4 flex justify-center">
+            <div className="w-96 h-8 bg-gradient-to-r from-[#8B4513]/30 via-[#D2691E]/40 to-[#8B4513]/30 rounded-full shadow-lg border border-[#c5a880]/30"></div>
           </div>
         </div>
       </section>
